@@ -1,0 +1,20 @@
+{
+  "name": "SVG",
+  "version": "0.1.0",
+  "description": "svg handler",
+  "repository": {
+    "type": "git"
+  },
+  "author": "Shlomi Shavit",
+  "scripts": {
+    "start": "spritesh --input opt --output coral.svg",
+    "prestart": "svgo -f raw -o opt --config=svgo.yml"
+  },
+  "devDependencies": {
+    "spritesh": "1.2.1",
+    "svgo": "1.0.5"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
